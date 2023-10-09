@@ -1,0 +1,282 @@
+<!doctype html>
+
+<html data-bs-theme="dark" lang="de">
+<head>
+    <meta charset="utf-8">
+    <meta content="width=device-width, initial-scale=1" name="viewport">
+    <title>Strawberry</title>
+    <link href="/scss/custom.css" rel="stylesheet">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/">Strawberries Site Thingy</a>
+        <button aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler"
+                data-bs-target="#navbarSupportedContent" data-bs-toggle="collapse" type="button">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a aria-current="page" class="nav-link active" href="/Carcassonne.html">Carcassonne Erweiterungen
+                        Regelübersicht</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="p-3 container-md">
+    <label class="visually-hidden" for="carcassonneVariant">Carcassonne Variante: </label>
+    <select class="form-select" id="carcassonneVariant">
+        <option selected value="none">Carcassonne Variante</option>
+        <option value="standard">Standardspiel</option>
+        <option value="nebel">Nebel über Carcassonne</option>
+    </select>
+    <br>
+    <div class="carcassonne_variant" id="standard">
+        <h1>Carcassonne</h1>
+        <h4>Erweiterungen: </h4>
+        <div class="form-check form-switch">
+            <input class="form-check-input extension-switch" id="bauern" role="switch" type="checkbox">
+            <label class="form-check-label" for="bauern">Die Bauern <span class="text-secondary">(verlängert das Spiel nicht) </span></label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input extension-switch" id="fluss" role="switch" type="checkbox">
+            <label class="form-check-label" for="fluss">Der Fluss <span
+                    class="text-secondary">(ca. 3 Minuten länger) </span></label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input extension-switch" id="abt" role="switch" type="checkbox">
+            <label class="form-check-label" for="abt">Der Abt <span
+                    class="text-secondary">(verlängert das Spiel nicht) </span></label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input extension-switch" id="wirtshäuser" role="switch" type="checkbox">
+            <label class="form-check-label" for="wirtshäuser">Wirtshäuser und Kathedralen <span class="text-secondary">(ca. 15 Minuten länger) </span></label>
+        </div>
+        <div class="form-check form-switch">
+            <input class="form-check-input extension-switch" id="händler" role="switch" type="checkbox">
+            <label class="form-check-label" for="händler">Händler und Baumeister <span class="text-secondary">(ca. 15 Minuten länger) </span></label>
+        </div>
+
+        <h4>Material: </h4>
+        <ul>
+            <li>8 Meeple pro Spieler</li>
+            <li class="abt">1 Abt Pro Spieler</li>
+            <li class="wirtshäuser"> 1 Großer Meeple pro Spieler</li>
+            <li class="händler"> 1 Schwein pro Spieler</li>
+            <li class="händler"> 1 Baumeister pro Spieler</li>
+
+            <li class="händler"> 20 Warenplättchen:
+                <ul>
+                    <li>9 Wein</li>
+                    <li>6 Korn</li>
+                    <li>5 Tuch</li>
+                </ul>
+            </li>
+            <li>8 Punktekarten</li>
+            <li>71 Plättchen aus dem Grundspiel</li>
+            <li class="no-fluss">1 Startplättchen</li>
+            <li class="fluss">12 Flussplättchen</li>
+            <li class="wirtshäuser">18 Plättchen der Erweiterung Wirtshäuser und Kathedralen</li>
+            <li class="händler">24 Plättchen der Erweiterung Händler und Baumeister</li>
+        </ul>
+
+        <h4>Spielvorbereitung: </h4>
+        <ul>
+            <li class="fluss">Entfernen der Quelle und dem See aus den Flusskarten.</li>
+            <li class="fluss">Mischen der Flusskarten, legen dieser auf einen Stapel, die Quelle ganz unter den Stapel
+                legen
+            </li>
+            <li>Mischen der <span class="fluss">übrigen</span> Plättchen und legen dieser auf einen oder mehrere <span
+                    class="fluss">separate </span>Stapel
+            </li>
+            <li class="fluss">Auslegen der Quelle als Startkarte</li>
+            <li class="no-fluss">Auslegen der Startkarte</li>
+        </ul>
+
+        <h4>Zugablauf: </h4>
+        <ol>
+            <li>1 Plättchen<span
+                    class="fluss">, erst vom Flussstapel, erst ven dieser Leer ist von den anderen stapeln</span> Ziehen
+            </li>
+            <li>Plättchen Anlegen<span class="fluss">, zwei Flussplättchen dürfen nicht in Folge in dieselbe Richtung abbiegen</span>.
+                Falls das Plättchen nirgendwo angelegt werden kann, wird es wieder in die Stapel gemischt und ein neues
+                gezogen. <span class="händler">Legst du das Plättchen an eine Straße oder Stadt an, auf der aktuell dein Baumeister steht, darfst du nach Beenden dieses Zuges direkt einen weiteren durchführen.</span>
+            </li>
+            <li>1 Meeple<span class="wirtshäuser"> oder großen Meeple</span> Einsetzen:
+                <div class="table-responsive col-3">
+                    <table class="table  table-bordered">
+                        <thead>
+                        <tr>
+                            <th scope="col">
+                                Ziel
+                            </th>
+                            <th scope="col">
+                                Name für Meeple
+                            </th>
+                            <th scope="col">
+                                Stellart
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Straße</td>
+                            <td>Wegelagerer</td>
+                            <td>Stehend</td>
+                        </tr>
+                        <tr>
+                            <td>Stadt</td>
+                            <td>Ritter</td>
+                            <td>Stehend</td>
+                        </tr>
+                        <tr>
+                            <td>Kloster</td>
+                            <td>Mönch</td>
+                            <td>Stehend</td>
+                        </tr>
+
+                        <tr class="bauern">
+                            <td>Wiese</td>
+                            <td>Bauer</td>
+                            <td>Liegend</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+                <div class="abt">
+                    <b>ODER</b> 1. Abt setzen:
+                    <ul>
+                        <li>
+                            Garten
+                        </li>
+                        <li>
+                            Kloster
+                        </li>
+                    </ul>
+                    <b>ODER</b> 1 Abt vom Spielfeld nehmen und werten
+                </div>
+                <div class="händler">
+                    <b>ODER</b> 1 Baumeister einsetzen:
+                    <ul>
+                        <li>
+                            Stadt, auf der Bereits ein Meeple des Spielers steht
+                        </li>
+                        <li>
+                            Straße, auf der Bereits ein Meeple des Spielers steht
+                        </li>
+                    </ul>
+                    <b>ODER</b> 1 Schwein auf eine Wiese auf der schon ein Meeple des Spielers liegt einsetzen
+
+                </div>
+            </li>
+            <li>Punktewertung(en) auslösen:
+                <div class="table-responsive col-3">
+                    <table class="table table-bordered">
+                        <thead>
+                        <tr>
+                            <th scope="col">
+                                Ziel
+                            </th>
+                            <th scope="col">
+                                Punktewertung
+                            </th>
+                        </tr>
+                        </thead>
+                        <tbody>
+                        <tr>
+                            <td>Straße</td>
+                            <td>1 Punkt für Jedes Plättchen<span class="wirtshäuser">, falls ein oder mehr Wirtshäuser an der Straße liegen, 2 Punkte für Jedes Plättchen</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Stadt</td>
+                            <td>2 Punkte für Jedes Plättchen, zusätzlich 2 Punkte für Jedes Wappen<span
+                                    class="wirtshäuser">, falls eine oder mehr Kathedralen in der Stadt liegen, 3 Punkte für Jedes Plättchen und 3 Punkte für jedes Wappen</span>.<span
+                                    class="händler"> Sind auf einem oder mehreren Plättchen der Stadt Warensymbole abgebildet, bekommt der Spieler, der diese abgeschlossen hat, für jedes dieser Symbole eine Entsprechendes Warenplättchen aus dem allgemeinen Vorrat.</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Kloster</td>
+                            <td>1 Punkt für Jedes umgebende Plättchen</td>
+                        </tr>
+                        <tr class="bauern">
+                            <td>Wiese</td>
+                            <td>Kann im Laufe des Spiels nicht gewertet werden.</td>
+                        </tr>
+                        <tr class="abt">
+                            <td>Garten</td>
+                            <td>1 Punkt für Jedes umgebende Plättchen</td>
+                        </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </li>
+        </ol>
+
+        <h4>Endwertung: </h4>
+        <div class="table-responsive col-3">
+            <table class="table table-bordered">
+                <thead>
+                <tr>
+                    <th scope="col">
+                        Ziel
+                    </th>
+                    <th scope="col">
+                        Punktewertung
+                    </th>
+                </tr>
+                </thead>
+                <tbody>
+                <tr>
+                    <td>Straße</td>
+                    <td>1 Punkt für Jedes Plättchen<span class="wirtshäuser">, falls ein oder mehr Wirtshäuser an der Straße liegen und diese noch nicht abgeschlossen ist, zählt die ganze Straße 0 Punkte</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Stadt</td>
+                    <td>1 Punkt für Jedes Plättchen, zusätzlich 1 Punkt für Jedes Wappen<span class="wirtshäuser">, falls eine oder mehr Kathedralen in der Stadt liegen und diese noch nicht abgeschlossen ist, zählt die ganze Stadt 0 Punkte.</span>
+                    </td>
+                </tr>
+                <tr>
+                    <td>Kloster</td>
+                    <td>1 Punkt für Jedes umgebende Feld</td>
+                </tr>
+                <tr class="bauern">
+                    <td>Wiese</td>
+                    <td>3 Punkte für Jede abgeschlossene Stadt, die an der Wiese anliegt<span class="händler">, falls auf der Wiese ein schwein steht, zählt jede abgeschlossene Stadt 4 Punkte</span></td>
+                </tr>
+                <tr class="abt">
+                    <td>Garten</td>
+                    <td>1 Punkt für Jedes umgebende Plättchen</td>
+                </tr>
+                <tr class="händler">
+                    <td>Warenplättchen</td>
+                    <td>Jeweils 10 Punkte für den Spieler, der jeweils die Mehrheit der 3 verschiedenen Arten von
+                        Warenplättchen hat. Bei einem Gleichstand bekommen alle beteiligten Spieler die 10 Punkte
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <hr>
+    </div>
+    <div class="carcassonne_variant" id="nebel">
+        <h1>Nebel über Carcassonne</h1>
+        <p>
+            Aktuell sind die Regeln für nebel über Carcassonne noch nicht übernommen worden.
+        </p>
+        <hr>
+    </div>
+</div>
+
+<script src="./bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="./js/carcassonne.js"></script>
+
+</body>
+</html>
