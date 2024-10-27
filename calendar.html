@@ -1,0 +1,77 @@
+<!doctype html>
+
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Strawberry</title>
+    <link href="/scss/custom.css" rel="stylesheet">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/" aria-current="page">Strawberries Site Thingy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="./Carcassonne.html">Carcassonne Erweiterungen Regelübersicht</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./stochastic.html">Stochastic Simulation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./calendar.html">Calendar</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="p-3 container-md">
+    <div class="alert-info alert">
+        Falls Informationen hier fehlen/nicht aktuell sind, meldet euch bei Strawberry!
+    </div>
+    <div class="table-responsive-md table-striped table-striped-columns">
+        <table class="table">
+            <caption>Liste von wichtigen Daten</caption>
+            <thead>
+                <tr>
+                    <th scope="col">#</th>
+                    <th scope="col">Inhalt</th>
+                    <th scope="col">Datum</th>
+                    <th scope="col">Uhrzeit</th>
+                    <th scope="col">Ort</th>
+                    <th scope="col">Abgeschlossen</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <th scope="row">1</th>
+                    <td>Gründungstreffen 1</td>
+                    <td>2024/10/13</td>
+                    <td>16:00</td>
+                    <td>N</td>
+                    <td>✅</td>
+                </tr>
+                <tr>
+                    <th scope="row">2</th>
+                    <td>Gründungstreffen 2</td>
+                    <td>2024/10/27</td>
+                    <td>13:00</td>
+                    <td>N</td>
+                    <td>❌</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
+
+
+<script src="bootstrap/dist/js/bootstrap.bundle.js"></script>
+<script src="./js/calendar.js"></script>
+</body>
+</html>
