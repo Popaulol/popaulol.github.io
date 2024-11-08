@@ -1,0 +1,144 @@
+<!doctype html>
+
+<html lang="en" data-bs-theme="dark">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Strawberry</title>
+    <link href="/scss/custom.css" rel="stylesheet">
+
+    <meta http-equiv="refresh" content="1">
+
+</head>
+<body>
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="/" aria-current="page">Strawberries Site Thingy</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" href="./Carcassonne.html">Carcassonne Erweiterungen Regelübersicht</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./stochastic.html">Stochastic Simulation</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./calendar.html">Calendar</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="./hunger_games.html">Hunger Games thingy</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<div class="p-2"></div>
+
+<div class="container-md">
+    <div class="row">
+        <div class="col">
+            <div class="alert alert-info" role="alert">
+              This Site was created for my english course. <br>
+                Firstly it contains a reference for all of the Character mentioned in the book, following that you can find summaries of all Chapters.
+            </div>
+        </div>
+    </div>
+
+    <div class="row">
+        <h3 class="h-auto">
+            Characters
+        </h3>
+    </div>
+    <div class="row">
+        {% for character in characters %}
+            <div class="col-4">
+                <div class="card p-0 m-2">
+                    <div class="card-header">
+                        <h5 class="card-title">{{ character.name }}</h5>
+                        <h6 class="card-subtitle text-body-secondary">{{ character.importance }}</h6>
+                    </div>
+                    <ul class="list-group list-group-flush">
+                        {% if character.other_names %}
+                            <li class="list-group-item">Other names:
+                                <ul>
+                                    {% for name in character.other_names %}
+                                        <li>{{ name }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                        {% endif %}
+                        <li class="list-group-item">{{ character.description }}</li>
+                        {% if character.relationships %}
+                            <li class="list-group-item">Relationships:
+                                <ul>
+                                    {% for person, relationship in character.relationships.items() %}
+                                        <li>{{ person }} : {{ relationship }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                        {% endif %}
+                        {% if character.character_traits %}
+                            <li class="list-group-item">Character Traits:
+                                <ul>
+                                    {% for trait in character.character_traits %}
+                                        <li>{{ trait }}</li>
+                                    {% endfor %}
+                                </ul>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+        {% endfor %}
+    </div>
+    <div class="row">
+        <h3 class="h-auto">
+            Chapter Summaries
+        </h3>
+    </div>
+
+    <div class="row">
+        <h4 class="h-auto">
+            Part I: &quot;The Tributes&quot;
+        </h4>
+    </div>
+
+    {% for chapter in chapters %}
+        {% if chapter.part == "I" %}
+            {% include '_chapter.html' %}
+        {% endif %}
+    {% endfor %}
+
+    <div class="row">
+        <h4 class="h-auto">
+            Part II: &quot;The Games&quot;
+        </h4>
+    </div>
+
+    {% for chapter in chapters %}
+        {% if chapter.part == "II" %}
+            {% include '_chapter.html' %}
+        {% endif %}
+    {% endfor %}
+
+    <div class="row">
+        <h4 class="h-auto">
+            Part III: &quot;The Victor&quot;
+        </h4>
+    </div>
+
+    {% for chapter in chapters %}
+        {% if chapter.part == "III" %}
+            {% include '_chapter.html' %}
+        {% endif %}
+    {% endfor %}
+</div>
+
+<script src="bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+</html>

@@ -1,0 +1,8 @@
+{
+  "name": "Effie Trinket",
+  "other_names": [],
+  "importance": "Side Character",
+  "description": "She is the escort of District 12. She has a scary white grin, pinkish hair and a spring green suit.",
+  "relationships": {"Madge Undersee" : "Daughter"},
+  "character_traits": ["bright", "bubbly"]
+}

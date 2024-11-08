@@ -1,0 +1,33 @@
+<div class="row justify-content-center">
+    <div class="card col-11 p-0 m-2">
+        <div class="card-header">
+            <div class="card-title">
+                {{ chapter.number }}
+            </div>
+        </div>
+        <div class="card-body">
+            <div class="card-text">
+                {{ chapter.summary }}
+            </div>
+        </div>
+        {% if chapter.relationship_katniss_peeta or chapter.authority_power or chapter.media_effects_on_people %}
+            <div class="card-footer">
+                {% if chapter.relationship_katniss_peeta %}
+                    <div class="card-text text-primary-emphasis">
+                        This Chapter includes Scenes relevant about Katniss and her Relationship with Peeta and how it changes over time
+                    </div>
+                {% endif %}
+                {% if chapter.authority_power %}
+                    <div class="card-text text-primary-emphasis">
+                        This Chapter includes Scenes showing how the Capitol uses power and authority
+                    </div>
+                {% endif %}
+                {% if chapter.relationship_katniss_peeta %}
+                    <div class="card-text text-primary-emphasis">
+                        This Chapter includes Scenes showing the roles the media plays and how it affects people
+                    </div>
+                {% endif %}
+            </div>
+        {% endif %}
+    </div>
+</div>
