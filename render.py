@@ -50,8 +50,8 @@ class Chapter:
             media_effects_on_people=data["media_effects_on_people"],
         )
 
-    def __index__(self):
-        return self.number
+    def __lt__(self, other: Self) -> bool:
+        return self.number < other.number
 
 
 def characters() -> dict[str, list[Character]]:

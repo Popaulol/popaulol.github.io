@@ -4,5 +4,5 @@
   "importance": "Side Character",
   "description": "She has light hair and blue eyes",
   "relationships": {"Primrose Everdeen": "Daughter", "Katniss Everdeen": "Daughter"},
-  "character_traits": []
+  "character_traits": ["Unresponsive", "Saddened"]
 }
