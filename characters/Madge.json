@@ -4,5 +4,5 @@
   "importance": "Side Character",
   "description": "She is the Daughter of the Mayor",
   "relationships": {"Katniss Everdeen": "Schoolmate", "Mr. Undersee" : "Father"},
-  "character_traits": ["introverted"]
+  "character_traits": ["introverted", "nice"]
 }

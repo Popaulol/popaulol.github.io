@@ -1,0 +1,8 @@
+{
+  "name": "Mr. Mellark",
+  "other_names": [],
+  "importance": "Side Character",
+  "description": "He is a baker.",
+  "relationships": {"Peeta Mellark": "Son"},
+  "character_traits": ["kind"]
+}

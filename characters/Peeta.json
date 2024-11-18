@@ -3,6 +3,6 @@
   "other_names": [],
   "importance": "Main Character",
   "description": "Peeta Mellark is one of the Tributes of District 12. Medium height, stocky build, ashy blond hair that falls in waves over his\nforehead.",
-  "relationships": {},
-  "character_traits": []
+  "relationships": {"Baker" :  "Father"},
+  "character_traits": ["kind"]
 }

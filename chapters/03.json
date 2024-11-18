@@ -1,8 +1,8 @@
 {
   "part": "I",
   "number": 3,
-  "summary": "",
+  "summary": "The Tributes are Taken into the Justice Building, Katniss is set into a room where she can get a few lasts visits and gifts before the games. Her Mother and Sister visit her, she tells them how to survive without Katniss. Afterwards she gets visited by the baker, the father of Peeta, the other Tribute, he gifts her cookies. Next she gets a visit from Madge, she gifts her a gold pin as a symbol of the district.Lastly she gets a visit from Gale who gives her advice on how to win the game. Afterwards she is transported to the Districts Train Station by Car where she meets Peeta again. Then they board the Train which will takes them to the Capitol. After having changed Clothes on the Train, Katniss examines the Pin given to her by madge and reminices about her Father as it awakens memories of him in her. Then She have supper together with Peeta and Effie Trinket. Next they watch a recap of the Reapings across Panem.",
   "relationship_katniss_peeta" : false,
-  "authority_power" : false,
-  "media_effects_on_people" : false
+  "authority_power" : true,
+  "media_effects_on_people" : true
 }
