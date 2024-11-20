@@ -1,8 +1,8 @@
 {
   "part": "I",
   "number": 5,
-  "summary": "Phasellus tempor libero vitae justo elementum, eu malesuada augue rutrum. Sed sed lorem vel turpis convallis ultrices eu ac orci. Aenean eleifend sollicitudin risus nec mollis. Donec vulputate lectus lectus. Nulla ultrices, nunc et semper viverra, tortor odio consectetur urna, vel varius magna augue a tortor. Nam pharetra turpis urna, ut tempus urna vestibulum at. Nullam porta facilisis leo, eget sollicitudin lorem gravida non. Maecenas at velit sed nulla rutrum finibus. Vivamus sed sapien sagittis, ornare nulla vel, eleifend diam. Sed sed risus nisi. Phasellus aliquet, mauris et euismod aliquet, nisl justo varius purus, ut blandit urna magna ac felis. In vulputate consectetur nisl sed varius. Vestibulum sit amet ornare lorem. ",
-  "relationship_katniss_peeta" : false,
-  "authority_power" : false,
-  "media_effects_on_people" : false
+  "summary": "Katniss gets her Hair waxed by a woman called Venia, who is part of a Team that is supposed to fix some obvious issues before Katniss' Personal Stylelist even wants to meet her. Then she meets Cinna who is her personal Stylelist. He looks at her and compliments the way her mother braided her hair then he tells her to put her Robe back on for them to talk. When they get their food, Katniss thinks about how much work it would be to make that kind of food in the situation she was in just a few days prior. He tells her the idea he and Peeta's stylelist came up with: A burning Piece of Coal. Katniss then gets dressed in this costume. Afterwards she meets back up with Peeta and they gown down to board the chariot for the opening ceremony. One after the other the Chariots carrying the Tributes leave the Remake Center in the numbered order of the Districts, starting with District 1. Just before they leave the building Cinna lights the two of them on fire. Thw crowds love them and shower them with praise whilst they ride the chariots through the capitol to the City Circle. During the ride Peeta and Katniss hold hands to keep each other in the Chariot but Katniss realizes again that they shouldn't become too close since they might have to kill each other during the games. When President Snow of Panem gives them their official welcome, Katniss notices that the broadcast shows her and Peeta more than the other tributes.",
+  "relationship_katniss_peeta" : true,
+  "authority_power" : true,
+  "media_effects_on_people" : true
 }

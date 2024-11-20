@@ -6,6 +6,21 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Strawberry</title>
     <link href="/scss/custom.css" rel="stylesheet">
+    <style>
+        @media print {
+            .pagebreak {
+                 /*clear: both; */
+                page-break-after: always;
+            }
+        }
+        
+        @media screen {
+            .pagebreak {
+                display: none;
+            }
+        }
+
+    </style>
 </head>
 <body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -41,7 +56,8 @@
         <div class="col">
             <div class="alert alert-info" role="alert">
               This Site was created for my english course. <br>
-                Firstly it contains a reference for all of the Character mentioned in the book, following that you can find summaries of all Chapters.
+                Firstly it contains a reference for all of the Character mentioned in the book, following that you can find summaries of all Chapters. <br>
+                If you are currently looking at the pdf version of this, there is a much nicer looking and easy too read version available at <a href="https://popaulol.github.io/hunger_games.html">https://popaulol.github.io/hunger_games.html</a>
             </div>
         </div>
     </div>
@@ -91,6 +107,7 @@
                     </ul>
                 </div>
             </div>
+            <div class="pagebreak"> </div>
         {% endfor %}
     </div>
     <div class="row">
