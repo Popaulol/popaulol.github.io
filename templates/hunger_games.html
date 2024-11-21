@@ -56,13 +56,85 @@
         <div class="col">
             <div class="alert alert-info" role="alert">
               This Site was created for my english course. <br>
-                Firstly it contains a reference for all of the Character mentioned in the book, following that you can find summaries of all Chapters. <br>
+                Firstly it contains my newspaper articles, following that you can find summaries of all Chapters and finishing with an overview of the main Characters. <br>
                 If you are currently looking at the pdf version of this, there is a much nicer looking and easy too read version available at <a href="https://popaulol.github.io/hunger_games.html">https://popaulol.github.io/hunger_games.html</a>
             </div>
         </div>
     </div>
 
+<div class="row">
+    <div class="col">
+        <div class="card">
+            <div class="card-header">
+                <h3 class="card-title">The Panem Times</h3>
+                <h4 class="card-subtitle">Peeta Mellark Saves Katniss Everdeen in a Surprising Turn of Events<br>
+                    By: Paul Fragemann</h4>
+            </div>
+            <div class="card-body">
+                <p>In a surprising twist in Chapter 16 of The Hunger Games, Peeta Mellark, the quiet baker’s son from District 12, saved Katniss Everdeen’s life. This unexpected act of heroism has left readers amazed and talking about Peeta's true character.
+                </p><p>
+During the dangerous events of the 74th Hunger Games, Katniss found herself in a life-threatening situation. Injured and vulnerable, her chances of survival were slim. Just when things seemed dire, Peeta stepped in to help, putting his own life at risk to save hers.
+</p><p>
+Katniss, known for her strength and resourcefulness, was caught off guard by Peeta’s actions. Until this point, she had been handling the threats of the arena on her own. Peeta’s intervention not only saved her but also showed a different side of him. Was it love, strategy, or both? This question now hangs in the air, adding depth to Peeta’s character.
+</p><p>
+The Capitol and readers are buzzing about Peeta’s brave move. On social media, fans are expressing their shock and admiration. One reader tweeted, "I never saw this coming from Peeta. It changes everything!"
+</p><p>
+As the Games continue, the relationship between Katniss and Peeta will undoubtedly face more challenges. Whether this act will lead to their survival or further complications remains to be seen. What’s clear is that Peeta Mellark’s courageous act has changed the course of the Games and captured the hearts of readers.
+</p><p>
+For now, everyone in Panem is left to think about what true heroism looks like and how it can appear in the most unexpected ways.</p>
+            </div>
+
+            <div class="card-footer">
+                <b>Paul Fragemann</b>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="pagebreak"> </div>
+<div class="p-2"></div>
     <div class="row">
+        <h3 class="h-auto">
+            Chapter Summaries
+        </h3>
+    </div>
+
+    <div class="row">
+        <h4 class="h-auto">
+            Part I: &quot;The Tributes&quot;
+        </h4>
+    </div>
+
+    {% for chapter in chapters %}
+        {% if chapter.part == "I" %}
+            {% include '_chapter.html' %}
+        {% endif %}
+    {% endfor %}
+
+    <div class="row">
+        <h4 class="h-auto">
+            Part II: &quot;The Games&quot;
+        </h4>
+    </div>
+
+    {% for chapter in chapters %}
+        {% if chapter.part == "II" %}
+            {% include '_chapter.html' %}
+        {% endif %}
+    {% endfor %}
+
+    <div class="row">
+        <h4 class="h-auto">
+            Part III: &quot;The Victor&quot;
+        </h4>
+    </div>
+
+    {% for chapter in chapters %}
+        {% if chapter.part == "III" %}
+            {% include '_chapter.html' %}
+        {% endif %}
+    {% endfor %}
+
+<div class="row">
         <h3 class="h-auto">
             Characters
         </h3>
@@ -110,47 +182,6 @@
             <div class="pagebreak"> </div>
         {% endfor %}
     </div>
-    <div class="row">
-        <h3 class="h-auto">
-            Chapter Summaries
-        </h3>
-    </div>
-
-    <div class="row">
-        <h4 class="h-auto">
-            Part I: &quot;The Tributes&quot;
-        </h4>
-    </div>
-
-    {% for chapter in chapters %}
-        {% if chapter.part == "I" %}
-            {% include '_chapter.html' %}
-        {% endif %}
-    {% endfor %}
-
-    <div class="row">
-        <h4 class="h-auto">
-            Part II: &quot;The Games&quot;
-        </h4>
-    </div>
-
-    {% for chapter in chapters %}
-        {% if chapter.part == "II" %}
-            {% include '_chapter.html' %}
-        {% endif %}
-    {% endfor %}
-
-    <div class="row">
-        <h4 class="h-auto">
-            Part III: &quot;The Victor&quot;
-        </h4>
-    </div>
-
-    {% for chapter in chapters %}
-        {% if chapter.part == "III" %}
-            {% include '_chapter.html' %}
-        {% endif %}
-    {% endfor %}
 </div>
 
 <script src="bootstrap/dist/js/bootstrap.bundle.js"></script>
